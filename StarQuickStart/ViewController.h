@@ -12,7 +12,7 @@
 #import <StarIO_Extension/StarIoExt.h>
 #import "Communication.h"
 #import "receiptBuilder.h"
-
+#import "GlobalQueueManager.h"
 
 
 @interface ViewController : UIViewController <StarIoExtManagerDelegate>

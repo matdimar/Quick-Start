@@ -20,6 +20,7 @@
 		65AE5E55224947D600B4AC69 /* StarIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AE5E53224947D600B4AC69 /* StarIO.framework */; };
 		65AE5E582249772D00B4AC69 /* Communication.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5E572249772D00B4AC69 /* Communication.m */; };
 		65AE5E5D2249860000B4AC69 /* receiptBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5E5C2249860000B4AC69 /* receiptBuilder.m */; };
+		65AE5E61224BA30F00B4AC69 /* GlobalQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5E5F224BA30F00B4AC69 /* GlobalQueueManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		65AE5E572249772D00B4AC69 /* Communication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communication.m; sourceTree = "<group>"; };
 		65AE5E5B2249860000B4AC69 /* receiptBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = receiptBuilder.h; sourceTree = "<group>"; };
 		65AE5E5C2249860000B4AC69 /* receiptBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = receiptBuilder.m; sourceTree = "<group>"; };
+		65AE5E5F224BA30F00B4AC69 /* GlobalQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalQueueManager.m; sourceTree = "<group>"; };
+		65AE5E60224BA30F00B4AC69 /* GlobalQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalQueueManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 		65AE5E2D2249209B00B4AC69 /* StarQuickStart */ = {
 			isa = PBXGroup;
 			children = (
+				65AE5E63224BA35000B4AC69 /* Queue Manager */,
 				65AE5E5E22499D6000B4AC69 /* Receipt Builder */,
 				65AE5E5A22497DE600B4AC69 /* Printer Search */,
 				65AE5E5922497DC400B4AC69 /* Communication */,
@@ -132,6 +136,15 @@
 				65AE5E5C2249860000B4AC69 /* receiptBuilder.m */,
 			);
 			path = "Receipt Builder";
+			sourceTree = "<group>";
+		};
+		65AE5E63224BA35000B4AC69 /* Queue Manager */ = {
+			isa = PBXGroup;
+			children = (
+				65AE5E60224BA30F00B4AC69 /* GlobalQueueManager.h */,
+				65AE5E5F224BA30F00B4AC69 /* GlobalQueueManager.m */,
+			);
+			path = "Queue Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65AE5E61224BA30F00B4AC69 /* GlobalQueueManager.m in Sources */,
 				65AE5E332249209B00B4AC69 /* ViewController.m in Sources */,
 				65AE5E582249772D00B4AC69 /* Communication.m in Sources */,
 				65AE5E4C224939F600B4AC69 /* searchPrinterViewController.m in Sources */,

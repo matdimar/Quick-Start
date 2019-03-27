@@ -99,19 +99,22 @@
         [receiptBuilder append3inchTextReceiptData:documentBuilder utf8:TRUE];
         
     }
+    
+    
 
-    [Communication sendCommands:documentBuilder.commands
-                            port:self->_starIoExtManager.port
-              completionHandler:NULL];
+  
     
-      [self->_starIoExtManager.lock unlock];
+    [_starIoExtManager.lock lock];
     
-    [Communication sendCommands:documentBuilder.commands
-                       portName:@"BT:Star Micronics"
-                       portSettings:@"portable"
-                       timeout:10000
-                       completionHandler:NULL];
-    
+    dispatch_async(GlobalQueueManager.sharedManager.serialQueue, ^{
+        
+        [Communication sendCommands:documentBuilder.commands
+                               port:self->_starIoExtManager.port
+                  completionHandler:NULL];
+        
+        [self->_starIoExtManager.lock unlock];
+      
+    });
     
 }
 
