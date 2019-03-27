@@ -13,6 +13,13 @@
 		65AE5E38224920A200B4AC69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AE5E37224920A200B4AC69 /* Assets.xcassets */; };
 		65AE5E3B224920A200B4AC69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AE5E39224920A200B4AC69 /* LaunchScreen.storyboard */; };
 		65AE5E3E224920A200B4AC69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5E3D224920A200B4AC69 /* main.m */; };
+		65AE5E4C224939F600B4AC69 /* searchPrinterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5E4B224939F600B4AC69 /* searchPrinterViewController.m */; };
+		65AE5E4F224947BE00B4AC69 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AE5E4E224947BE00B4AC69 /* ExternalAccessory.framework */; };
+		65AE5E51224947C800B4AC69 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AE5E50224947C800B4AC69 /* CoreBluetooth.framework */; };
+		65AE5E54224947D600B4AC69 /* StarIO_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AE5E52224947D600B4AC69 /* StarIO_Extension.framework */; };
+		65AE5E55224947D600B4AC69 /* StarIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AE5E53224947D600B4AC69 /* StarIO.framework */; };
+		65AE5E582249772D00B4AC69 /* Communication.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5E572249772D00B4AC69 /* Communication.m */; };
+		65AE5E5D2249860000B4AC69 /* receiptBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5E5C2249860000B4AC69 /* receiptBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,16 @@
 		65AE5E3A224920A200B4AC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65AE5E3C224920A200B4AC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65AE5E3D224920A200B4AC69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65AE5E4A224939F600B4AC69 /* searchPrinterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchPrinterViewController.h; sourceTree = "<group>"; };
+		65AE5E4B224939F600B4AC69 /* searchPrinterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchPrinterViewController.m; sourceTree = "<group>"; };
+		65AE5E4E224947BE00B4AC69 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		65AE5E50224947C800B4AC69 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		65AE5E52224947D600B4AC69 /* StarIO_Extension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StarIO_Extension.framework; sourceTree = "<group>"; };
+		65AE5E53224947D600B4AC69 /* StarIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StarIO.framework; sourceTree = "<group>"; };
+		65AE5E562249772D00B4AC69 /* Communication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communication.h; sourceTree = "<group>"; };
+		65AE5E572249772D00B4AC69 /* Communication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communication.m; sourceTree = "<group>"; };
+		65AE5E5B2249860000B4AC69 /* receiptBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = receiptBuilder.h; sourceTree = "<group>"; };
+		65AE5E5C2249860000B4AC69 /* receiptBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = receiptBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65AE5E54224947D600B4AC69 /* StarIO_Extension.framework in Frameworks */,
+				65AE5E55224947D600B4AC69 /* StarIO.framework in Frameworks */,
+				65AE5E51224947C800B4AC69 /* CoreBluetooth.framework in Frameworks */,
+				65AE5E4F224947BE00B4AC69 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +65,7 @@
 			children = (
 				65AE5E2D2249209B00B4AC69 /* StarQuickStart */,
 				65AE5E2C2249209B00B4AC69 /* Products */,
+				65AE5E4D224947BE00B4AC69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +80,9 @@
 		65AE5E2D2249209B00B4AC69 /* StarQuickStart */ = {
 			isa = PBXGroup;
 			children = (
+				65AE5E5E22499D6000B4AC69 /* Receipt Builder */,
+				65AE5E5A22497DE600B4AC69 /* Printer Search */,
+				65AE5E5922497DC400B4AC69 /* Communication */,
 				65AE5E2E2249209B00B4AC69 /* AppDelegate.h */,
 				65AE5E2F2249209B00B4AC69 /* AppDelegate.m */,
 				65AE5E312249209B00B4AC69 /* ViewController.h */,
@@ -69,6 +94,44 @@
 				65AE5E3D224920A200B4AC69 /* main.m */,
 			);
 			path = StarQuickStart;
+			sourceTree = "<group>";
+		};
+		65AE5E4D224947BE00B4AC69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65AE5E52224947D600B4AC69 /* StarIO_Extension.framework */,
+				65AE5E53224947D600B4AC69 /* StarIO.framework */,
+				65AE5E50224947C800B4AC69 /* CoreBluetooth.framework */,
+				65AE5E4E224947BE00B4AC69 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65AE5E5922497DC400B4AC69 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				65AE5E562249772D00B4AC69 /* Communication.h */,
+				65AE5E572249772D00B4AC69 /* Communication.m */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		65AE5E5A22497DE600B4AC69 /* Printer Search */ = {
+			isa = PBXGroup;
+			children = (
+				65AE5E4A224939F600B4AC69 /* searchPrinterViewController.h */,
+				65AE5E4B224939F600B4AC69 /* searchPrinterViewController.m */,
+			);
+			path = "Printer Search";
+			sourceTree = "<group>";
+		};
+		65AE5E5E22499D6000B4AC69 /* Receipt Builder */ = {
+			isa = PBXGroup;
+			children = (
+				65AE5E5B2249860000B4AC69 /* receiptBuilder.h */,
+				65AE5E5C2249860000B4AC69 /* receiptBuilder.m */,
+			);
+			path = "Receipt Builder";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				65AE5E332249209B00B4AC69 /* ViewController.m in Sources */,
+				65AE5E582249772D00B4AC69 /* Communication.m in Sources */,
+				65AE5E4C224939F600B4AC69 /* searchPrinterViewController.m in Sources */,
 				65AE5E3E224920A200B4AC69 /* main.m in Sources */,
+				65AE5E5D2249860000B4AC69 /* receiptBuilder.m in Sources */,
 				65AE5E302249209B00B4AC69 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +353,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHPSKWB5MQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StarQuickStart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +375,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHPSKWB5MQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StarQuickStart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
